@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio | Akuntan & Mahasiswa S2 Manajemen Inovasi</title>
+    <title>Firda Permata | Akuntan & Inovator</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <!-- Navbar -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
                 <a href="#home">FP<span class="highlight">.</span></a>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#experience">Pengalaman</a></li>
-                <li><a href="#education">Pendidikan</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -32,241 +34,345 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-sphere sphere1"></div>
+            <div class="gradient-sphere sphere2"></div>
+            <div class="gradient-sphere sphere3"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <span class="badge">Akuntan & Inovator</span>
-                    <h1>Firda Permata<span class="highlight">, S.Ak.</span></h1>
-                    <p class="hero-subtitle">Akuntan Profesional | Mahasiswa S2 Manajemen Inovasi</p>
-                    <p class="hero-desc">Menggabungkan keahlian akuntansi dengan inovasi strategis untuk mendorong transformasi bisnis di era digital.</p>
+                <div class="hero-text" data-aos="fade-up">
+                    <div class="badge-wrapper">
+                        <span class="badge">
+                            <i class="fas fa-chart-line"></i> Akuntan & Inovator
+                        </span>
+                    </div>
+                    <h1 class="glow-text">Firda Permata<br><span class="highlight-gradient">S.Ak., M.Inov (Cand)</span></h1>
+                    <div class="typing-wrapper">
+                        <p class="hero-subtitle">Saya adalah <span class="typed-text"></span><span class="cursor-blink">|</span></p>
+                    </div>
+                    <p class="hero-desc">Akuntan & Mahasiswa S2 Manajemen Inovasi. Tidak hanya mengelola angka, tetapi juga menciptakan nilai melalui business model innovation, digital transformation, & design thinking. Membantu bisnis berinovasi tanpa meninggalkan fundamentals keuangan.</p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Hubungi Saya <i class="fas fa-arrow-right"></i></a>
-                        <a href="#" class="btn btn-secondary">Download CV <i class="fas fa-download"></i></a>
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Hubungi Saya</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
                     </div>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-medium"></i></a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="https://via.placeholder.com/400x500?text=Foto+Anda" alt="Profile">
-                        <div class="floating-card card-1">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Analisis Keuangan</span>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="image-card">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/500x500/2563eb/white?text=Your+Photo" alt="Profile">
+                            <div class="image-border"></div>
                         </div>
-                        <div class="floating-card card-2">
-                            <i class="fas fa-lightbulb"></i>
-                            <span>Inovasi Bisnis</span>
+                        <div class="floating-badge badge1">
+                            <i class="fas fa-chart-pie"></i>
+                            <div>
+                                <h4>5+ Years</h4>
+                                <p>Experience</p>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge2">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>50+</h4>
+                                <p>Clients</p>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge3">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>15+</h4>
+                                <p>Projects</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse"></div>
+        </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Tentang Saya</span>
-                <h2>Mengapa Saya?</h2>
-                <div class="divider"></div>
+                <h2>Kenalin, Saya <span class="highlight-gradient">Firda</span></h2>
+                <div class="divider">
+                    <span></span>
+                    <i class="fas fa-star"></i>
+                    <span></span>
+                </div>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Akuntan dengan Jiwa Inovator</h3>
-                    <p>Saya adalah seorang akuntan profesional dengan pengalaman lebih dari 5 tahun di bidang audit dan konsultan keuangan. Saat ini sedang menempuh pendidikan S2 Manajemen Inovasi untuk memperluas wawasan dalam transformasi digital dan inovasi bisnis.</p>
-                    <p>Kombinasi unik antara latar belakang akuntansi dan studi inovasi memungkinkan saya untuk tidak hanya memahami angka, tetapi juga bagaimana menciptakan nilai tambah melalui strategi inovatif.</p>
-                    
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Tahun Pengalaman</span>
+                    <h3>Akuntan dengan <span class="highlight-gradient">Jiwa Inovator</span></h3>
+                    <p>Saya percaya bahwa angka bukan hanya tentang laporan keuangan, tapi tentang cerita bisnis dan potensi pertumbuhan. Dengan latar belakang akuntansi dan studi inovasi, saya membantu organisasi melihat gambaran utuh — dari kesehatan finansial hingga peluang transformasi digital.</p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                            <div>
+                                <span class="stat-number" data-count="5">0</span>
+                                <span class="stat-label">+ Tahun Pengalaman</span>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Klien Puas</span>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                            <div>
+                                <span class="stat-number" data-count="50">0</span>
+                                <span class="stat-label">+ Klien Puas</span>
+                            </div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Proyek Inovasi</span>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-lightbulb"></i></div>
+                            <div>
+                                <span class="stat-number" data-count="15">0</span>
+                                <span class="stat-label">+ Proyek Inovasi</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-info">
+                <div class="about-cards">
                     <div class="info-card">
-                        <i class="fas fa-user"></i>
-                        <p><strong>Nama:</strong> Firda Permata, S.Ak.</p>
+                        <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                        <div>
+                            <h4>Pendidikan</h4>
+                            <p>S2 Manajemen Inovasi - UI (2025)<br>S1 Akuntansi - UGM (2018)</p>
+                        </div>
                     </div>
                     <div class="info-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
+                        <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
                     </div>
                     <div class="info-card">
-                        <i class="fas fa-envelope"></i>
-                        <p><strong>Email:</strong> firda@example.com</p>
+                        <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                        <div>
+                            <h4>Sertifikasi</h4>
+                            <p>CPA, Brevet AB, Design Thinking Certified</p>
+                        </div>
                     </div>
                     <div class="info-card">
-                        <i class="fas fa-phone"></i>
-                        <p><strong>Telepon:</strong> +62 812 3456 7890</p>
+                        <div class="card-icon"><i class="fas fa-language"></i></div>
+                        <div>
+                            <h4>Bahasa</h4>
+                            <p>Indonesia, English (TOEFL 600+), Mandarin (Basic)</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Keahlian</span>
-                <h2>Kompetensi Profesional</h2>
-                <div class="divider"></div>
+                <span class="section-tag">Kompetensi</span>
+                <h2>Yang Bisa Saya <span class="highlight-gradient">Lakukan</span></h2>
+                <div class="divider">
+                    <span></span>
+                    <i class="fas fa-star"></i>
+                    <span></span>
+                </div>
             </div>
-            <div class="skills-grid">
+            <div class="skills-wrapper">
                 <div class="skill-category">
-                    <h3><i class="fas fa-calculator"></i> Akuntansi & Keuangan</h3>
-                    <div class="skill-item">
-                        <span>Audit & Assurance</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                    <div class="category-header">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Akuntansi & Keuangan</h3>
                     </div>
-                    <div class="skill-item">
-                        <span>Pelaporan Keuangan (PSAK/IFRS)</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Perpajakan</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Analisis Laporan Keuangan</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                    <div class="skill-list">
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-info">
+                                <span>Audit & Assurance</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-info">
+                                <span>Pelaporan Keuangan (PSAK/IFRS)</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span>Perpajakan</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="92">
+                            <div class="skill-info">
+                                <span>Analisis Laporan Keuangan</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Manajemen & Inovasi</h3>
-                    <div class="skill-item">
-                        <span>Strategic Management</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                    <div class="category-header">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Manajemen & Inovasi</h3>
                     </div>
-                    <div class="skill-item">
-                        <span>Business Model Innovation</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Digital Transformation</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Design Thinking</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                    <div class="skill-list">
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-info">
+                                <span>Strategic Management</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span>Business Model Innovation</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="82">
+                            <div class="skill-info">
+                                <span>Digital Transformation</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span>Design Thinking</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Tools & Software</h3>
-                    <div class="skill-item">
-                        <span>Microsoft Excel (Advanced)</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Tools & Software</h3>
                     </div>
-                    <div class="skill-item">
-                        <span>SPSS / Eviews</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>Tableau / Power BI</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <span>SAP / Accurate</span>
-                        <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                    <div class="skill-list">
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-info">
+                                <span>Microsoft Excel (Advanced)</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="skill-info">
+                                <span>SPSS / Eviews</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="skill-info">
+                                <span>Tableau / Power BI</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-info">
+                                <span>Python (Data Analysis)</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Karir</span>
-                <h2>Pengalaman Profesional</h2>
-                <div class="divider"></div>
+                <span class="section-tag">Perjalanan Karir</span>
+                <h2>Pengalaman <span class="highlight-gradient">Profesional</span></h2>
+                <div class="divider">
+                    <span></span>
+                    <i class="fas fa-star"></i>
+                    <span></span>
+                </div>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022 - Sekarang</div>
+                    <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
                     <div class="timeline-content">
+                        <div class="timeline-date">2022 - Sekarang</div>
                         <h3>Senior Auditor</h3>
                         <h4>KAP Deloitte Indonesia</h4>
                         <p>Memimpin tim audit untuk klien Fortune 500, melakukan analisis risiko keuangan, dan memberikan rekomendasi perbaikan sistem pengendalian internal.</p>
+                        <div class="timeline-tags">
+                            <span>Audit</span>
+                            <span>Risk Management</span>
+                            <span>Internal Control</span>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2019 - 2022</div>
+                    <div class="timeline-icon"><i class="fas fa-chart-line"></i></div>
                     <div class="timeline-content">
+                        <div class="timeline-date">2019 - 2022</div>
                         <h3>Financial Analyst</h3>
                         <h4>PT Inovasi Nusantara</h4>
                         <p>Menganalisis laporan keuangan, membuat proyeksi finansial untuk ekspansi bisnis, dan mengimplementasikan sistem budgeting berbasis cloud.</p>
+                        <div class="timeline-tags">
+                            <span>Financial Analysis</span>
+                            <span>Budgeting</span>
+                            <span>Forecasting</span>
+                        </div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2018 - 2019</div>
+                    <div class="timeline-icon"><i class="fas fa-file-invoice"></i></div>
                     <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2019</div>
                         <h3>Junior Accountant</h3>
                         <h4>PT Maju Bersama</h4>
                         <p>Mengelola pembukuan harian, menyusun laporan keuangan bulanan, dan melakukan rekonsiliasi bank.</p>
+                        <div class="timeline-tags">
+                            <span>Accounting</span>
+                            <span>Bookkeeping</span>
+                            <span>Reconciliation</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Pendidikan</span>
-                <h2>Perjalanan Akademis</h2>
-                <div class="divider"></div>
-            </div>
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>Magister Manajemen Inovasi</h3>
-                    <h4>Universitas Indonesia</h4>
-                    <p class="edu-year">2023 - 2025 (Sekarang)</p>
-                    <p>IPK Sementara: 3.89/4.00<br>
-                    Fokus: Digital Innovation, Technology Management, Entrepreneurship</p>
-                </div>
-                <div class="education-card">
-                    <div class="edu-icon"><i class="fas fa-university"></i></div>
-                    <h3>Sarjana Akuntansi</h3>
-                    <h4>Universitas Gadjah Mada</h4>
-                    <p class="edu-year">2014 - 2018</p>
-                    <p>IPK: 3.78/4.00<br>
-                    Predikat: Cum Laude<br>
-                    Skripsi: Analisis Fraud Detection dengan Data Mining</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Portofolio</span>
-                <h2>Proyek & Publikasi</h2>
-                <div class="divider"></div>
+                <h2>Proyek <span class="highlight-gradient">Unggulan</span></h2>
+                <div class="divider">
+                    <span></span>
+                    <i class="fas fa-star"></i>
+                    <span></span>
+                </div>
             </div>
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">Semua</button>
@@ -277,9 +383,9 @@
             <div class="project-grid">
                 <div class="project-card" data-category="accounting">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Audit+Tool" alt="Project">
+                        <img src="https://placehold.co/600x400/1e293b/white?text=AI+Audit+Tool" alt="Project">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -294,9 +400,9 @@
                 </div>
                 <div class="project-card" data-category="innovation">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Digital+Transformation" alt="Project">
+                        <img src="https://placehold.co/600x400/1e293b/white?text=Digital+Transformation" alt="Project">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -311,9 +417,9 @@
                 </div>
                 <div class="project-card" data-category="research">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Research" alt="Project">
+                        <img src="https://placehold.co/600x400/1e293b/white?text=Research+Publication" alt="Project">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -328,9 +434,9 @@
                 </div>
                 <div class="project-card" data-category="accounting">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250?text=Financial+Analysis" alt="Project">
+                        <img src="https://placehold.co/600x400/1e293b/white?text=Power+BI+Dashboard" alt="Project">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -347,35 +453,38 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Kontak</span>
-                <h2>Mari Berkolaborasi</h2>
-                <div class="divider"></div>
+                <span class="section-tag">Hubungi Saya</span>
+                <h2>Lets <span class="highlight-gradient">Collaborate</span></h2>
+                <div class="divider">
+                    <span></span>
+                    <i class="fas fa-star"></i>
+                    <span></span>
+                </div>
             </div>
-            <div class="contact-content">
+            <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h3>Hubungi Saya</h3>
+                    <h3>Ada proyek dalam pikiran?</h3>
                     <p>Siap untuk berdiskusi tentang peluang kerjasama, konsultasi keuangan, atau proyek inovasi.</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
                             <div>
                                 <h4>Telepon</h4>
                                 <p>+62 812 3456 7890</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                             <div>
                                 <h4>Email</h4>
                                 <p>firda.permata@email.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
+                            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
                             <div>
                                 <h4>LinkedIn</h4>
                                 <p>linkedin.com/in/firdapermata</p>
@@ -384,30 +493,60 @@
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Nama Lengkap" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="text" placeholder="Subjek">
-                    <textarea rows="5" placeholder="Pesan..." required></textarea>
-                    <button type="submit" class="btn btn-primary">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+                    <div class="form-group">
+                        <input type="text" placeholder="Nama Lengkap" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subjek">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Pesan..." required></textarea>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Kirim Pesan</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Firda Permata. All rights reserved.</p>
+                <div class="footer-logo">
+                    <h3>FP<span>.</span></h3>
+                    <p>Akuntan & Inovator</p>
+                </div>
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Firda Permata. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
